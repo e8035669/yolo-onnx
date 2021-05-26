@@ -1,0 +1,6 @@
+find_package(PkgConfig)
+pkg_check_modules(onnxruntime libonnxruntime)
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(onnxruntime "Could not find onnxruntime")
+mark_as_advanced(onnxruntime_INCLUDE_DIRS onnxruntime_LIBRARIES)

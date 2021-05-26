@@ -35,12 +35,13 @@ set(DEPS_PATHS
 
 # Library paths
 set(LIB_PATHS
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/demo_lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/lib/yolo_onnx
     )
 
 # Utility paths
 set(UTIL_PATHS
-    ${CMAKE_CURRENT_SOURCE_DIR}/util/demo_util
+    #${CMAKE_CURRENT_SOURCE_DIR}/util/demo_util
+    ${CMAKE_CURRENT_SOURCE_DIR}/util/infer_model
     )
 
 if(${BUILD_TEST})
